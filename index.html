@@ -76,9 +76,9 @@
       <div class="outer">
         <section id="main">
   
-    <article id="post-部署聊天系统" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+    <article id="post-chat_system" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-meta">
-    <a href="/2022/11/19/%E9%83%A8%E7%BD%B2%E8%81%8A%E5%A4%A9%E7%B3%BB%E7%BB%9F/" class="article-date">
+    <a href="/2022/11/19/chat_system/" class="article-date">
   <time class="dt-published" datetime="2022-11-19T05:52:21.000Z" itemprop="datePublished">2022-11-19</time>
 </a>
     
@@ -90,7 +90,7 @@
         
   
     <h1 itemprop="name">
-      <a class="p-name article-title" href="/2022/11/19/%E9%83%A8%E7%BD%B2%E8%81%8A%E5%A4%A9%E7%B3%BB%E7%BB%9F/">项目汇报</a>
+      <a class="p-name article-title" href="/2022/11/19/chat_system/">项目汇报</a>
     </h1>
   
 
@@ -99,11 +99,16 @@
     <div class="e-content article-entry" itemprop="articleBody">
       
         <h2 id="环境安装"><a href="#环境安装" class="headerlink" title="环境安装"></a>环境安装</h2><h3 id="mysql"><a href="#mysql" class="headerlink" title="mysql"></a>mysql</h3><p><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/348317883">这个安装教程靠谱</a></p>
-<h2 id="部署"><a href="#部署" class="headerlink" title="部署"></a>部署</h2><h2 id="定制化修改"><a href="#定制化修改" class="headerlink" title="定制化修改"></a>定制化修改</h2>
+<h2 id="部署"><a href="#部署" class="headerlink" title="部署"></a>部署</h2><p>step1: 配置好云服务器的准入准出规则后，还需要开放服务器的端口  </p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">firewall-cmd --state   # 查看是否运行防火墙</span><br><span class="line">firewall-cmd --query-port=80/tcp  # 查看端口开放了没</span><br><span class="line">firewall-cmd --permanent --add-port=80/tcp</span><br><span class="line">firewall-cmd --reload </span><br></pre></td></tr></table></figure>
+<p>step2: 本机启动服务，监听0.0.0.0:80即可  </p>
+<p>step3: 把买的域名，挂到服务器的弹性公网IP，就可以访问了:<br><a target="_blank" rel="noopener" href="http://wzx1020andwhj0326.top/">wzx1020andwhj0326.top</a></p>
+<p>step4: 试用<br>联系我获取测试账号和密码 </p>
+<h2 id="定制化修改"><a href="#定制化修改" class="headerlink" title="定制化修改"></a>定制化修改</h2>
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2022/11/19/%E9%83%A8%E7%BD%B2%E8%81%8A%E5%A4%A9%E7%B3%BB%E7%BB%9F/" data-id="claniqgi90000hxjk3yse50t6" data-title="项目汇报" class="article-share-link">Teilen</a>
+      <a data-url="http://example.com/2022/11/19/chat_system/" data-id="claxohrdm0000avjk833lc1sf" data-title="项目汇报" class="article-share-link">Teilen</a>
       
       
       
@@ -197,7 +202,7 @@
       <ul>
         
           <li>
-            <a href="/2022/11/19/%E9%83%A8%E7%BD%B2%E8%81%8A%E5%A4%A9%E7%B3%BB%E7%BB%9F/">项目汇报</a>
+            <a href="/2022/11/19/chat_system/">项目汇报</a>
           </li>
         
           <li>
